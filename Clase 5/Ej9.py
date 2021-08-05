@@ -1,3 +1,11 @@
+# Los N empleados de una empresa reciben un salario por semana de acuerdo con las horas
+# trabajadas. Las horas normales de trabajo por semana son 40 y las horas adicionales se
+# pagan al doble de las horas normales. Escribir un algoritmo que solicite las horas trabajadas
+# en la semana por cada empleado y la paga por hora trabajada, para calcular a) el monto que
+# debe recibir el empleado, b) el monto total requerido para el pago a todos los empleados, y c)
+# la cantidad de billetes de cada denominación que se requiere para efectuar el pago a los
+# empleados.
+
 from os import system
 
 system("cls")
