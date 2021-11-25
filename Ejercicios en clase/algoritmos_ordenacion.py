@@ -43,7 +43,7 @@ lista = []
 for i in range(n):
     # elemento = int(input(f"Introduzca el elemento {i + 1} de la lista: "))
     elemento = randint(0, 10000)
-    lista.append(elemento)
+    lista.append(elemento)  
 
 print("La lista sin ordenar es: ", lista)
 

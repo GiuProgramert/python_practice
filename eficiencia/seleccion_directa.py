@@ -4,10 +4,15 @@ from time import time
 n = int(input("Ingrese el valor de n: "))
 lista = []
 
-#Aleatorio
+#Aleatoria
 for i in range(n):
   elemento = int(10 * n * random())
-  lista.append()
+  lista.append(elemento)
+
+#ordenada
+# for i in range(n):
+#   elemento = int(10 * n * i)
+#   lista.append(elemento)
 
 inicio = time()
 
@@ -19,5 +24,5 @@ for i in range(n - 1):
 
 fin = time()
 
-print("Lista ordenada", lista)
-print("n =", n, "Duración: ", fin - inicio)
+print("Lista ordenada", lista, end="\n\n")
+print("N =", n, "Duración(SEG): ", fin - inicio)

@@ -3,7 +3,10 @@
 # 45132, etc. (Observación: son 120 números distintos)
 from random import random
 
-for i in range(120):
+numeros = []
+
+i = 0
+while i < 120:
   numeros_individuales = []
   long_numeros = 0
 
@@ -13,11 +16,10 @@ for i in range(120):
       cambio = True
       numero_individual = int(5 * random()) + 1
       existe = False
-      for k in range(long_numeros):
-        if numeros_individuales[k] == numero_individual:
-          existe = True
-        if existe:
-          cambio = False
+      if numero_individual in numeros_individuales:
+        existe = True
+      if existe:
+        cambio = False
     numeros_individuales.append(numero_individual)
     long_numeros += 1
 
@@ -25,4 +27,11 @@ for i in range(120):
   incrementador = 10
   for j in range(5):
     numero = numero + (numeros_individuales[j] * incrementador ** j)
-  print(numero)
+  if numero not in numeros:
+    numeros.append(numero)
+    i = i + 1
+
+numeros.sort()
+
+print("Cantidad:", i)
+print(numeros)
